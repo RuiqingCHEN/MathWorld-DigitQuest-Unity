@@ -1,0 +1,73 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private Rigidbody2D rb;
+    private Vector2 moveInput;
+
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
+    private bool playingFootsteps = false;
+    public float footstepSpeed = 0.5f;
+
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if (PauseController.IsGamePaused)
+        {
+            rb.linearVelocity = Vector2.zero; // Stop movement
+            animator.SetBool("isWalking", false);
+            StopFootsteps();
+            return;
+        }
+        rb.linearVelocity = moveInput * PlayerData.Instance.speed;
+        animator.SetBool("isWalking", rb.linearVelocity.magnitude > 0);
+        // StartFootsteps 音乐有修改
+        if (rb.linearVelocity.magnitude > 0 && !playingFootsteps)
+        {
+            StartFootsteps();
+        }
+        else if (rb.linearVelocity.magnitude == 0)
+        {
+            StopFootsteps();
+        }
+    }
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        animator.SetBool("isWalking", true);
+        if (context.canceled)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetFloat("LastInputX", moveInput.x);
+            animator.SetFloat("LastInputY", moveInput.y);
+        }
+        moveInput = context.ReadValue<Vector2>();
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
+    }
+
+    void StartFootsteps()
+    {
+        playingFootsteps = true;
+        InvokeRepeating(nameof(PlayFootstep), 0f, footstepSpeed);
+    }
+    void StopFootsteps()
+    {
+        playingFootsteps = false;
+        CancelInvoke(nameof(PlayFootstep));
+    }
+    void PlayFootstep()
+    {
+        SoundEffectManager.Play("Footstep", true);
+    }
+}
