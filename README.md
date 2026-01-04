@@ -52,7 +52,7 @@ The game focuses on four arithmetic operations—addition, subtraction, multipli
 - Audio # Free/public sound/music assets
 - Packages/
 - ProjectSettings/
-.gitignore
+- .gitignore
 
 *(Rename or reorganise this snippet if your folders differ slightly.)*
 
