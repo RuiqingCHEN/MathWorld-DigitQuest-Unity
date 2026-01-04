@@ -12,7 +12,7 @@ A playable version of *MathWorld: Digit Quest* is hosted on itch.io:
 https://betapbo.itch.io/mathworld  
 **Password:** `1234`
 
-This demo reflects the core gameplay and educational features described in this repository. Reviews, feedback, and gameplay insights from this demo can be found on the itch.io page.
+This demo reflects the core gameplay and educational features described in this repository. Gameplay insights from this demo can be found on the itch.io page.
 
 ## Academic Context
 This project was completed as my **graduate thesis project** at **University College Cork (UCC)**.  
