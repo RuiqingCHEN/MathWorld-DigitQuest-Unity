@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Item
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Character
+  - Projectiles
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - NPC
+  - Camera
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 2899131809
+    locked: 0
+  - name: Ground
+    uniqueID: 3589852891
+    locked: 0
+  - name: WalkInFront
+    uniqueID: 3232569411
+    locked: 0
+  - name: Collision
+    uniqueID: 2240961671
+    locked: 0
+  - name: DecorInFront
+    uniqueID: 3860905625
+    locked: 0
+  - name: Player
+    uniqueID: 4176745637
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 3689910045
+    locked: 0
+  - name: Decor
+    uniqueID: 798415179
+    locked: 0
+  - name: DecorBehind
+    uniqueID: 1051843349
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  - Light Layer 1
+  - Light Layer 2
+  - Light Layer 3
+  - Light Layer 4
+  - Light Layer 5
+  - Light Layer 6
+  - Light Layer 7
