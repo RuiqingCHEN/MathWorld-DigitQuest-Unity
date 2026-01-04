@@ -5,6 +5,15 @@ Designed to help children (ages 7–11) engage in maths practice through game me
 
 > A Unity 2D maths-quiz RPG serious game for children (ages 7–11), replacing traditional combat with problem-solving mechanics. :contentReference[oaicite:2]{index=2}
 
+## Playable Demo
+
+A playable version of *MathWorld: Digit Quest* is hosted on itch.io:
+
+https://betapbo.itch.io/mathworld  
+**Password:** `1234`
+
+This demo reflects the core gameplay and educational features described in this repository. Reviews, feedback, and gameplay insights from this demo can be found on the itch.io page.
+
 ## Academic Context
 This project was completed as my **graduate thesis project** at **University College Cork (UCC)**.  
 **Supervisor:** Dr John O’Mullane.
@@ -66,7 +75,6 @@ The project integrates free visual and audio assets. Credits for these assets ca
 
 ## Contact
 - GitHub: https://github.com/RuiqingCHEN  
-- Portfolio: N/A
 
 ## Citation (Academic)
 If referencing this work:
