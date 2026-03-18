@@ -3,7 +3,7 @@
 **A Unity 2D educational RPG that replaces combat with arithmetic problem-solving.**  
 Designed to help children (ages 7–11) engage in maths practice through game mechanics that tie quiz performance to progression and success.
 
-> A Unity 2D maths-quiz RPG serious game for children (ages 7–11), replacing traditional combat with problem-solving mechanics. :contentReference[oaicite:2]{index=2}
+> A Unity 2D maths-quiz RPG serious game for children (ages 7–11), replacing traditional combat with problem-solving mechanics. 
 
 ## Playable Demo
 
